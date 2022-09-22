@@ -6,15 +6,15 @@ using API.Entities;
 
 namespace API.Data
 {
-    public static class DbInitializer
+  public static class DbInitializer
+  {
+    public static void Initialize(StoreContext context)
     {
-        public static void Initialize(StoreContext context)
-        {
-          if(context.Products.Any()) return;
+      if (context.Products.Any()) return;
 
-          var products = new List<Product>
+      var products = new List<Product>
           {
-           		new Product
+               new Product
                 {
                     Name = "Angular Speedster Board 2000",
                     Description =
@@ -212,12 +212,12 @@ namespace API.Data
                 },
           };
 
-          foreach(var product in products)
-          {
-            context.Products.Add(product);
-          }
+      foreach (var product in products)
+      {
+        context.Products.Add(product);
+      }
 
-          context.SaveChanges();
-        }
+      context.SaveChanges();
     }
+  }
 }
