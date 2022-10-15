@@ -3,6 +3,9 @@
 		"titleBar.activeBackground": "#ff00ff",
 		"titleBar.inactiveBackground": "#ff00ff99",
 		"titleBar.activeForeground": "#111111",
-		"titleBar.inactiveForeground": "#11111199"
-	}
+		"titleBar.inactiveForeground": "#11111199",
+		"sideBar.background": "#011b29",
+		"activityBar.foreground": "#ff00ff"
+	},
+	"search.useGlobalIgnoreFiles": true
 }

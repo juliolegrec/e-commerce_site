@@ -1,16 +1,17 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./app/layout/styles.css";
-import App from "./app/layout/App";
-import reportWebVitals from "./reportWebVitals";
-import { Router } from "react-router-dom";
-import { createBrowserHistory, History } from "history";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './app/layout/styles.css';
+import App from './app/layout/App';
+import reportWebVitals from './reportWebVitals';
+import { Router } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
 
-export const history: History = createBrowserHistory();
+export const history = createBrowserHistory();
 
 const root = ReactDOM.createRoot(
-	document.getElementById("root") as HTMLElement
+	document.getElementById('root') as HTMLElement
 );
+
 root.render(
 	<React.StrictMode>
 		<Router history={history}>
